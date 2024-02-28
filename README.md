@@ -12,8 +12,9 @@ Este projeto foi desenvolvido como resultado de um Desafio Back-End (6ª ediçã
 ## Detalhes do projeto
 
 <div>
- 
   <img src="https://img.shields.io/badge/Java-0073b7?style=for-the-badge&logo=java&logoColor=white&color=orange">
   <img src="https://img.shields.io/badge/Spring%20Boot-2.7.0-green.svg?style=for-the-badge&logo=spring-boot">
-
 </div>
+
+
+Os arquivos do **Figma** estão disponibilizados em: [Adopet](https://www.figma.com/file/TlfkDoIu8uyjZNla1T8TpH/Challenge---Adopet?type=design&node-id=518-11&mode=design&t=M5URJeV0ZqxnXgsj-0).
