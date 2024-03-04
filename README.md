@@ -13,7 +13,7 @@ Este projeto foi desenvolvido como resultado de um Desafio Back-End (6ª ediçã
 
 <div>
   <img src="https://img.shields.io/badge/Java-0073b7?style=for-the-badge&logo=java&logoColor=white&color=orange">
-  <img src="https://img.shields.io/badge/Spring%20Boot-2.7.0-green.svg?style=for-the-badge&logo=spring-boot">
+  <img src="https://img.shields.io/badge/Spring%20Boot-3.2.3-green.svg?style=for-the-badge&logo=spring-boot">
 </div>
 
 
