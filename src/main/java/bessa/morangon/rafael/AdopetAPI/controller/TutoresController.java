@@ -32,6 +32,7 @@ public class TutoresController {
     public ResponseEntity<Page<?>> getTutores(@PageableDefault(size = 5, sort = {"id"}) Pageable pageable){
         return service.buscaTodosTutores(pageable);
     }
+
     @PostMapping
     @Transactional
     public ResponseEntity<TutorDTO> cadastraTutor(@RequestBody @Valid Tutor tutor, UriComponentsBuilder builder){
