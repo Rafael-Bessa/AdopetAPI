@@ -35,11 +35,21 @@ public class TutoresController {
 
     @PostMapping
     @Transactional
-    public ResponseEntity<TutorDTO> cadastraTutor(@RequestBody @Valid Tutor tutor, UriComponentsBuilder builder){
+    public ResponseEntity<?> cadastraTutor(@RequestBody @Valid Tutor tutor, UriComponentsBuilder builder){
+        return service.cadastraTutor(tutor, builder);
 
-        TutorDTO tutorDTO = service.cadastraTutor(tutor);
-        URI uri = builder.path("/tutores/{id}").buildAndExpand(tutorDTO.getId()).toUri();
-        return ResponseEntity.created(uri).body(tutorDTO);
+    }
+
+    @PutMapping("/{id}")
+    @Transactional
+    public ResponseEntity<?> atualizaTutor(@PathVariable long id, @RequestBody @Valid Tutor tutor) {
+        return service.atualizaTutor(id, tutor);
+    }
+
+    @DeleteMapping("/{id}")
+    @Transactional
+    public ResponseEntity<?> deletaTutor(@PathVariable long id){
+        return service.deletaTutor(id);
     }
 
 }
