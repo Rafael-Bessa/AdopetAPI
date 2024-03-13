@@ -25,7 +25,6 @@ public class TutorService {
     public ResponseEntity<?> buscaTutorPorID(long id){
 
         Optional<Tutor> tutorBuscado = tutorRepository.findById(id);
-
         if(tutorBuscado.isPresent()){
             return ResponseEntity.ok(mapper.map(tutorBuscado.get(), TutorDTO.class));
         }
@@ -33,8 +32,8 @@ public class TutorService {
     }
 
     public ResponseEntity<Page<?>> buscaTodosTutores(Pageable pageable) {
-        Page<Tutor> todosTutores = tutorRepository.findAll(pageable);
 
+        Page<Tutor> todosTutores = tutorRepository.findAll(pageable);
         if(todosTutores.getTotalElements() == 0){
             return ResponseEntity.notFound().build();
         }
@@ -47,7 +46,6 @@ public class TutorService {
         TutorDTO tutorDTO = mapper.map(tutor, TutorDTO.class);
         URI uri = builder.path("/tutores/{id}").buildAndExpand(tutorDTO.getId()).toUri();
         return ResponseEntity.created(uri).body(tutorDTO);
-
     }
 
     public ResponseEntity<?> atualizaTutor(long id, Tutor tutor){

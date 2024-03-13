@@ -1,6 +1,5 @@
 package bessa.morangon.rafael.AdopetAPI.controller;
 
-import bessa.morangon.rafael.AdopetAPI.domain.dto.TutorDTO;
 import bessa.morangon.rafael.AdopetAPI.domain.model.Tutor;
 import bessa.morangon.rafael.AdopetAPI.service.TutorService;
 import jakarta.validation.Valid;
@@ -12,9 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
-
-import java.net.URI;
-
 
 @RestController
 @RequestMapping("/tutores")
@@ -37,7 +33,6 @@ public class TutoresController {
     @Transactional
     public ResponseEntity<?> cadastraTutor(@RequestBody @Valid Tutor tutor, UriComponentsBuilder builder){
         return service.cadastraTutor(tutor, builder);
-
     }
 
     @PutMapping("/{id}")
