@@ -32,3 +32,20 @@ Os arquivos do **Figma** estão disponibilizados em: [Adopet](https://www.figma.
 
  O banco de dados para usar a aplicação será o h2, escolhido por ser um ambiente de desenvolvimento e pela praticidade de uso. Para analisar a configuração do banco você deve acessar o arquivo **resources/application.properties**. Vale notar que as tabelas (entidades) serão criadas automaticamente com a ajuda do Spring Data, as classes que serão tabelas estão no pacote **model**
 
+# A primeira Sprint do projeto
+
+Em minha jornada contínua para aprimorar minhas habilidades de desenvolvimento, recebi uma tarefa para criar funcionalidades essenciais na Classe/Entidade Tutor. Estas funcionalidades incluem a implementação dos verbos HTTP: GET, POST, PUT e DELETE.
+
+Minha arquitetura de software é meticulosamente estruturada em camadas distintas, cada uma com sua própria responsabilidade. Tenho a camada model, que define a estrutura dos meus dados. A camada service é onde manipulo a lógica de negócios. A camada controller é responsável por receber e responder às solicitações HTTP. Além disso, tenho a camada config e outras, todas trabalhando juntas para fornecer uma aplicação robusta e escalável.
+
+Para garantir a qualidade e a confiabilidade de minhas implementações, todos os verbos HTTP foram rigorosamente testados no Insomnia, uma plataforma de teste de API de alto desempenho. Isso me permite verificar e validar minhas implementações, garantindo que elas funcionem como esperado.
+
+![a](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/a9d113e9-f6a2-4c07-b42c-6939349ea39b) 
+
+![b](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/4f049a9c-6feb-44dc-b165-96cc2b300cbc)
+
+![c](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/b6d1a612-923c-4d07-8b6c-867edc9d5948)
+
+# A Segunda Sprint do Projeto
+
+
