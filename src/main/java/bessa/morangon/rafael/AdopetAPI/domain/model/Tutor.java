@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 public class Tutor {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank
     @Size(min = 3, max = 50)
