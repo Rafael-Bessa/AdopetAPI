@@ -28,4 +28,7 @@ Os arquivos do **Figma** estão disponibilizados em: [Adopet](https://www.figma.
   <img src="https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/ae88bb10-2be9-4f3b-9be8-11f54e2981c6">
 </div>
  
+## Database
+
+ O banco de dados para usar a aplicação será o h2, escolhido por ser um ambiente de desenvolvimento e pela praticidade de uso. Para analisar a configuração do banco você deve acessar o arquivo **resources/application.properties**. Vale notar que as tabelas (entidades) serão criadas automaticamente com a ajuda do Spring Data, as classes que serão tabelas estão no pacote **model**
 
