@@ -19,7 +19,7 @@ public class Tutor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank
-    @Size(min = 3, max = 50)
+    @Size(min = 3, max = 100)
     private String nome;
 
     @Email

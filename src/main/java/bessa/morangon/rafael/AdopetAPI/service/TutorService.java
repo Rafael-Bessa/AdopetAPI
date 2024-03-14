@@ -3,7 +3,6 @@ package bessa.morangon.rafael.AdopetAPI.service;
 import bessa.morangon.rafael.AdopetAPI.domain.dto.TutorDTO;
 import bessa.morangon.rafael.AdopetAPI.domain.model.Tutor;
 import bessa.morangon.rafael.AdopetAPI.domain.repository.TutorRepository;
-import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
