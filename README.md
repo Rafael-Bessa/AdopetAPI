@@ -48,4 +48,14 @@ Para garantir a qualidade e a confiabilidade de minhas implementações, todos o
 
 # A Segunda Sprint do Projeto
 
+*Implementando Pet e Abrigo*
+
+Nesta sprint, vou focar na implementação das entidades Pet e Abrigo no sistema. Após minha própria análise decide criar um relacionamento ManyToOne/OneToMany, onde um Pet pertence a um único Abrigo, e um Abrigo pode ter vários Pets.
+
+Para ambas as entidades, vou implementar o CRUD completo, permitindo a criação, leitura, atualização e exclusão de Pets e Abrigos. A implementação levará em consideração a lógica de negócio específica do projeto, como regras de validação de dados.
+
+Eu também criei o record *Endereço* com o intuito de gravar o endereço do Abrigo, usando a anotação @Embeddable
+
+
+
 
