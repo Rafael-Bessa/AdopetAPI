@@ -9,6 +9,7 @@ import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.URL;
 
 @Entity
 @Data
@@ -31,7 +32,10 @@ public class Pet {
     @NotBlank
     @Size(max = 255)
     private String comportamento;
+    @URL
     private String caminhoImagem;
+    private Boolean adotado = false;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "abrigo_id")
     @JsonBackReference
