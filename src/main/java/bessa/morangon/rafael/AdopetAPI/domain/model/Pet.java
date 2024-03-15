@@ -1,5 +1,6 @@
 package bessa.morangon.rafael.AdopetAPI.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
@@ -25,13 +26,15 @@ public class Pet {
     private Integer idade;
     @NotNull
     @Valid
+    @Enumerated(EnumType.STRING)
     private Porte porte;
     @NotBlank
     @Size(max = 255)
     private String comportamento;
     private String caminhoImagem;
-    @NotNull
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "abrigo_id")
+    @JsonBackReference
     private Abrigo abrigo;
 
 }
