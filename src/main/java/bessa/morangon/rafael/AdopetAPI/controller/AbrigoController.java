@@ -26,14 +26,23 @@ public class AbrigoController {
     public ResponseEntity<Page<?>> getAbrigos(@PageableDefault(size = 5, sort = {"id"}) Pageable pageable){
         return service.buscaTodosAbrigos(pageable);
     }
-
     @PostMapping
     @Transactional
     public ResponseEntity<?> setAbrigo(@RequestBody @Valid Abrigo abrigo, UriComponentsBuilder builder){
         return service.cadastraAbrigo(abrigo, builder);
     }
 
+    @PutMapping("{id}")
+    @Transactional
+    public ResponseEntity<?> updateAbrigo(@PathVariable long id, @RequestBody @Valid Abrigo abrigo){
+        return service.atualizaAbrigo(id, abrigo);
+    }
 
+    @DeleteMapping("{id}")
+    @Transactional
+    public ResponseEntity<?> deleteAbrigo(@PathVariable long id){
+        return service.deletaAbrigo(id);
+    }
 
 
 }

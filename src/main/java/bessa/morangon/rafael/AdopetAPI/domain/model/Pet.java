@@ -24,6 +24,7 @@ public class Pet {
     @NotBlank
     @Size(max = 100)
     private String nome;
+    @NotNull
     private Integer idade;
     @NotNull
     @Valid
@@ -33,6 +34,7 @@ public class Pet {
     @Size(max = 255)
     private String comportamento;
     @URL
+    @NotBlank
     private String caminhoImagem;
     private Boolean adotado = false;
 

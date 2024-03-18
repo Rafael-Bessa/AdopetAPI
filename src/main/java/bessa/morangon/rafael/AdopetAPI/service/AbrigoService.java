@@ -49,4 +49,27 @@ public class AbrigoService {
         URI uri = builder.path("/abrigos/{id}").buildAndExpand(abrigoDTO.getId()).toUri();
         return ResponseEntity.created(uri).body(abrigoDTO);
     }
+
+    public ResponseEntity<?> atualizaAbrigo(long id, Abrigo abrigo) {
+
+        Optional<Abrigo> abrigoBuscado = abrigoRepository.findById(id);
+        if(abrigoBuscado.isPresent()){
+            abrigoBuscado.get().setEmail(abrigo.getEmail());
+            abrigoBuscado.get().setNome(abrigo.getNome());
+            abrigoBuscado.get().setEndereco(abrigo.getEndereco());
+            abrigoBuscado.get().setTelefone(abrigo.getTelefone());
+//          abrigoBuscado.get().setListaPets(abrigo.getListaPets());
+            return ResponseEntity.ok(mapper.map(abrigoBuscado, AbrigoDTO.class));
+        }
+        return ResponseEntity.notFound().build();
+    }
+
+    public ResponseEntity<?> deletaAbrigo(long id) {
+        Optional<Abrigo> abrigo = abrigoRepository.findById(id);
+        if(abrigo.isPresent()){
+            abrigoRepository.delete(abrigo.get());
+            return ResponseEntity.noContent().build();
+        }
+        return ResponseEntity.notFound().build();
+    }
 }

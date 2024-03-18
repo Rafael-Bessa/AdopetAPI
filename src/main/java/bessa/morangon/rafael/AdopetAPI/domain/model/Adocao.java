@@ -24,6 +24,6 @@ public class Adocao {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "tutor_id")
     private Tutor tutor;
-    private LocalDate data;
+    private LocalDate data = LocalDate.now();
 
 }
