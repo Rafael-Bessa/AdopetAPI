@@ -1,4 +1,10 @@
 package bessa.morangon.rafael.AdopetAPI.domain.repository;
 
-public interface PetRepository {
+import bessa.morangon.rafael.AdopetAPI.domain.model.Pet;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface PetRepository extends JpaRepository<Pet, Long> {
+
 }

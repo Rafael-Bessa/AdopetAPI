@@ -59,6 +59,7 @@ public class AbrigoService {
             abrigoBuscado.get().setEndereco(abrigo.getEndereco());
             abrigoBuscado.get().setTelefone(abrigo.getTelefone());
 //          abrigoBuscado.get().setListaPets(abrigo.getListaPets());
+//          Pet é uma entidade da JPA, não posso atualizar assim, para atualizar um PET, eu preciso usar o endpoint /pet
             return ResponseEntity.ok(mapper.map(abrigoBuscado, AbrigoDTO.class));
         }
         return ResponseEntity.notFound().build();

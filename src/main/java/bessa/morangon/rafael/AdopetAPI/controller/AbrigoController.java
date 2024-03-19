@@ -1,7 +1,6 @@
 package bessa.morangon.rafael.AdopetAPI.controller;
 
 import bessa.morangon.rafael.AdopetAPI.domain.model.Abrigo;
-import bessa.morangon.rafael.AdopetAPI.domain.model.Tutor;
 import bessa.morangon.rafael.AdopetAPI.service.AbrigoService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,17 +31,16 @@ public class AbrigoController {
         return service.cadastraAbrigo(abrigo, builder);
     }
 
-    @PutMapping("{id}")
+    @PutMapping("/{id}")
     @Transactional
     public ResponseEntity<?> updateAbrigo(@PathVariable long id, @RequestBody @Valid Abrigo abrigo){
         return service.atualizaAbrigo(id, abrigo);
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity<?> deleteAbrigo(@PathVariable long id){
         return service.deletaAbrigo(id);
     }
-
 
 }
