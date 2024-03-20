@@ -24,6 +24,7 @@ public class Tutor {
 
     @Email
     @NotBlank
+    @Column(unique = true)
     @Size(min = 5, max = 50)
     private String email;
 

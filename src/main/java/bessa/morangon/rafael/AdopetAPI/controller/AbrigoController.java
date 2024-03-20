@@ -17,14 +17,17 @@ import org.springframework.web.util.UriComponentsBuilder;
 public class AbrigoController {
     @Autowired
     private AbrigoService service;
+
     @GetMapping("/{id}")
     public ResponseEntity<?>getAbrigoById(@PathVariable long id){
         return service.buscaAbrigoPorID(id);
     }
+
     @GetMapping
     public ResponseEntity<Page<?>> getAbrigos(@PageableDefault(size = 5, sort = {"id"}) Pageable pageable){
         return service.buscaTodosAbrigos(pageable);
     }
+
     @PostMapping
     @Transactional
     public ResponseEntity<?> setAbrigo(@RequestBody @Valid Abrigo abrigo, UriComponentsBuilder builder){
@@ -42,5 +45,4 @@ public class AbrigoController {
     public ResponseEntity<?> deleteAbrigo(@PathVariable long id){
         return service.deletaAbrigo(id);
     }
-
 }
