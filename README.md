@@ -58,6 +58,9 @@ Eu também criei o record *Endereço* com o intuito de gravar o endereço do Abr
 
 ![d](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/fb5fba8a-5077-4f68-b39e-d8c8dd3792ad)
 
+![e](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/b9bd33b2-da62-470b-9e8c-87641491258b)
+
+
 A figura acima mostra o mapeamento, com a ajuda do Spring Data e o Hybernate, as tabelas do banco foram criadas automaticamente, sem precisar escrever os comandos SQL.
 
 Durante a última Sprint, implementei várias funcionalidades novas que aprimoraram significativamente o sistema. Entre elas, destaco a Classe Pet, a Classe Abrigo e a funcionalidade de Adoção.
@@ -68,5 +71,14 @@ Quanto à funcionalidade de adoção, ela requer um Tutor e um Pet. Uma vez conc
 
 Para facilitar esse processo, criei uma classe auxiliar que recebe um JSON específico. Este JSON contém o e-mail do tutor, que é único no meu banco de dados, e o ID do Pet que é o alvo da adoção.
 
+Abaixo as entradas do método POST para as funcionalidades:
 
+![a](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/88492251-30eb-4c2e-852e-739ddd153b45)
 
+![b](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/d82a5701-a0ef-49dd-9938-e8f03910ec09)
+
+![c](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/097270ff-fc59-4060-80f5-723b126e55cb)
+
+![f](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/0d6b48f4-d9a1-4780-a840-05401b1222b5)
+
+![g](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/e0fea0b0-c46c-4e20-8cba-5216998feaf1)
