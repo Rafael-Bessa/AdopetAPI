@@ -82,3 +82,8 @@ Abaixo as entradas do método POST para as funcionalidades:
 ![f](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/0d6b48f4-d9a1-4780-a840-05401b1222b5)
 
 ![g](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/e0fea0b0-c46c-4e20-8cba-5216998feaf1)
+
+# A Terceira Sprint do Projeto
+
+Depois de implementar os CRUD's e funcionalidades (ainda faltando alguns ajustes). Nessa Sprint o objetivo é implementar a segurança da API, vou utilizar o Spring Security e o Token JWT.
+Pretendo também ao final criar uma documentação no swagger.
