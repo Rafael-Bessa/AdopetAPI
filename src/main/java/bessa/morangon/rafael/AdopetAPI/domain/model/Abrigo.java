@@ -25,6 +25,7 @@ public class Abrigo {
     private String telefone;
     @NotBlank
     @Email
+    @Column(unique = true)
     private String email;
     @Embedded
     @NotNull
