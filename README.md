@@ -56,6 +56,17 @@ Para ambas as entidades, vou implementar o CRUD completo, permitindo a criação
 
 Eu também criei o record *Endereço* com o intuito de gravar o endereço do Abrigo, usando a anotação @Embeddable
 
+![d](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/fb5fba8a-5077-4f68-b39e-d8c8dd3792ad)
+
+A figura acima mostra o mapeamento, com a ajuda do Spring Data e o Hybernate, as tabelas do banco foram criadas automaticamente, sem precisar escrever os comandos SQL.
+
+Durante a última Sprint, implementei várias funcionalidades novas que aprimoraram significativamente o sistema. Entre elas, destaco a Classe Pet, a Classe Abrigo e a funcionalidade de Adoção.
+
+Adotei uma regra de negócios específica para o meu sistema. Ao cadastrar um abrigo, posso optar por cadastrar pets simultaneamente ou não. Caso opte por não cadastrar os pets no momento da criação do abrigo, posso fazê-lo posteriormente, fornecendo o ID do abrigo.
+
+Quanto à funcionalidade de adoção, ela requer um Tutor e um Pet. Uma vez concluída a adoção, o atributo ‘adotado’ do Pet é atualizado para ‘true’.
+
+Para facilitar esse processo, criei uma classe auxiliar que recebe um JSON específico. Este JSON contém o e-mail do tutor, que é único no meu banco de dados, e o ID do Pet que é o alvo da adoção.
 
 
 
