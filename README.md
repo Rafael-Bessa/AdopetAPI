@@ -87,3 +87,10 @@ Abaixo as entradas do método POST para as funcionalidades:
 
 Depois de implementar os CRUD's e funcionalidades (ainda faltando alguns ajustes). Nessa Sprint o objetivo é implementar a segurança da API, vou utilizar o Spring Security e o Token JWT.
 Pretendo também ao final criar uma documentação no swagger.
+
+Primeiro passo é adicionar as dependências necessárias no pom.xml
+
+![sec](https://github.com/Rafael-Bessa/AdopetAPI/assets/104053775/26a58432-d851-4fd1-b9aa-ffe85d270d85)
+
+
+
