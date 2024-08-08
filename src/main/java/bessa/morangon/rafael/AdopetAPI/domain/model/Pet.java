@@ -15,7 +15,7 @@ import org.hibernate.validator.constraints.URL;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "pet")
+@Table(name = "PET")
 public class Pet {
 
     @Id

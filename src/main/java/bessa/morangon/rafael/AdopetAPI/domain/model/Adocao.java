@@ -13,7 +13,7 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "adocao")
+@Table(name = "ADOCAO")
 public class Adocao {
     @Id
     @GeneratedValue(generator = "uuid")
